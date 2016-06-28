@@ -1,6 +1,6 @@
 package com.aus.nlp.model;
 
-public class Word {
+public class Word implements Text {
 
     private String text;
 
@@ -14,6 +14,7 @@ public class Word {
         this.text = text;
     }
 
+    @Override
     public String getText() {
         return text;
     }

@@ -37,8 +37,6 @@ public class WordFactory {
      * Dropping punctuation does mean that the original text of a Sentence can't be completely reconstructed, though
      * all contained words are present in their original order.
      *
-     * The filter does not currently remove apostrophes occurring in contractions, possessive forms, etc.
-     *
      * Words are also currently kept in their original case, which can lead to redundant Word objects
      */
     private static class WordTokenFilter implements Filter<String> {

@@ -4,19 +4,19 @@ import java.util.List;
 
 public class Sentence {
 
-    private List<Word> words;
+    private List<Text> texts;
 
     public Sentence() {}
 
-    public Sentence(List<Word> words) {
-        this.words = words;
+    public Sentence(List<Text> texts) {
+        this.texts = texts;
     }
 
-    public List<Word> getWords() {
-        return words;
+    public List<Text> getTexts() {
+        return texts;
     }
 
-    public void setWords(List<Word> words) {
-        this.words = words;
+    public void setTexts(List<Text> texts) {
+        this.texts = texts;
     }
 }
