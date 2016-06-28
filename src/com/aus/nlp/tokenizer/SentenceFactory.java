@@ -9,10 +9,11 @@ import java.util.List;
 public class SentenceFactory {
 
     private final NamedEntityFactory namedEntityFactory;
-    private final WordFactory wordFactory = new WordFactory();
+    private final WordFactory wordFactory;
 
-    public SentenceFactory(NamedEntityFactory factory) {
+    public SentenceFactory(NamedEntityFactory factory, WordFactory wordFactory) {
         this.namedEntityFactory = factory;
+        this.wordFactory = wordFactory;
     }
 
     public Sentence makeSentence(List<String> textTokens) {

@@ -19,7 +19,7 @@ public class BreakTokenizer implements Tokenizer<String> {
     /**
      * Note:  the iterator with be positioned at the end after calling this
      *
-     * @return  List of all tokens from the source text, from beginning to end
+     * @return List of all tokens from the source text, from beginning to end
      */
     @Override
     public List<String> tokenize() {
@@ -33,6 +33,7 @@ public class BreakTokenizer implements Tokenizer<String> {
 
     /**
      * Take the next token, advance the current iterator position
+     *
      * @return next token, null if nothing left
      */
     @Override
@@ -49,7 +50,7 @@ public class BreakTokenizer implements Tokenizer<String> {
     }
 
     public boolean hasMore() {
-        if (breakIterator.next() != BreakIterator.DONE){
+        if (breakIterator.next() != BreakIterator.DONE) {
             breakIterator.previous();
             return true;
         }

@@ -4,5 +4,6 @@ import java.util.List;
 
 interface Tokenizer<T> {
     List<T> tokenize();
+
     T get();
 }

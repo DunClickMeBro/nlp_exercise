@@ -4,18 +4,19 @@ public class NamedEntity implements Text {
 
     private String text;
 
-    public NamedEntity() {}
-
-    public NamedEntity(String text) {
-        this.text = text;
+    public NamedEntity() {
     }
 
-    public void setText(String text) {
+    public NamedEntity(String text) {
         this.text = text;
     }
 
     @Override
     public String getText() {
         return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }

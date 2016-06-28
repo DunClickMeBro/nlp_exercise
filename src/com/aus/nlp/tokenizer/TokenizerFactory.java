@@ -6,7 +6,7 @@ import java.util.Locale;
 public class TokenizerFactory {
 
     // Default locale, since all the sample text is in US English
-    private static final Locale currentLocale = new Locale ("en","US");
+    private static final Locale currentLocale = new Locale("en", "US");
 
     public static BreakTokenizer makeWordTokenizer() {
         return new BreakTokenizer(BreakIterator.getWordInstance(currentLocale));
